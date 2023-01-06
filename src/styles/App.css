@@ -1,4 +1,117 @@
-body {
-  padding: 0;
-  margin: 0;
+.App {
+  margin: 10px 150px;
+  padding: 20px;
+  background-color: white;
+}
+
+.Header {
+  text-align: center;
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.Name,
+.Name input {
+  text-align: center;
+  color: #b6d7a8;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+hr {
+  border-color: #b6d7a8;
+}
+
+.ContactSection {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+
+.Address {
+  grid-area: 1 / 1 / span 1 / span 2;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.SchoolForm,
+.WorkForm {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.Grad,
+.Dates {
+  justify-self: flex-end;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.Position {
+  grid-column: span 2;
+  padding-bottom: 5px;
+}
+
+.Tasks,
+.Degree {
+  grid-column: span 2;
+}
+
+.Company,
+.School {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  grid-column: span 2;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  background-color: #b6d7a8;
+  color: white;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 30%;
+}
+
+.EditDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  background-color: #b6d7a8;
+  color: white;
+}
+
+.EditDiv.hidden {
+  display: none;
+}
+
+.InfoDiv {
+  position: relative;
+}
+
+.InfoDiv:hover {
+  cursor: pointer;
 }
